@@ -58,3 +58,6 @@ xhr.onreadystatechange = () => {
 }
 xhr.send()
 
+document.querySelector("#date_html").addEventListener("change", (e) => {
+  console.log(e.target.value)
+});
