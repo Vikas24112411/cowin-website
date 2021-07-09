@@ -10,22 +10,14 @@ xhr.onreadystatechange = () => {
       var opt = document.createElement("option");
       opt.value = `${responseObject.states[i].state_id}`
       opt.text = `${responseObject.states[i].state_name}`
-      //opt.text = "Option: "+responseObject.states[i];
-      // console.log(opt.value)
-      // console.log(opt.text)
       state_sel.add(opt, null);
     }
 
-
-
     document.querySelector("#state_html").addEventListener("change", () => {
-      // console.log(e)
       var tem = document.querySelector("select")
       console.log(document.querySelector("select").value)
       var t = document.querySelector("select").value
       console.log(tem.options[tem.selectedIndex].text)
-
-
 
       const dist_xhr = new XMLHttpRequest()
       const dist_url = 'https://cdn-api.co-vin.in/api/v2/admin/location/districts/' + t
@@ -46,8 +38,6 @@ xhr.onreadystatechange = () => {
             dist_sel.add(dist_opt, null);
           }
 
-
-
           // document.querySelector("#dist_html").addEventListener("change", getDistricts);
         }
       }
@@ -61,3 +51,16 @@ xhr.send()
 document.querySelector("#date_html").addEventListener("change", (e) => {
   console.log(e.target.value)
 });
+
+function toggle(){
+  var xx = document.getElementById("Myid");
+  xx.style.display = "none";
+}
+function toggleText() {
+  var x = document.getElementById("Myid");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
