@@ -33,7 +33,7 @@
         </div>
         <div style="display:inline;" class="form-group container col-md-4">
             <label class="control-label">District</label>
-            <select id="dist_html" class="custom-select" placeholder=".............">
+            <select onchange="toggle()" id="dist_html" class="custom-select" placeholder=".............">
                 <option selected>Select District</option>
             </select>
         </div>
@@ -44,7 +44,7 @@
                 value="Select Date" />
         </div>
         <div style="margin-top: 10px;text-align: center;" class="container">
-            <button onclick="toggleText()" id="mainbtn" class="btnb">Get details</button>
+            <button onclick="toggleOn()" id="mainbtn" class="btnb">Get details</button>
         </div>
     </div>
 
