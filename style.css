@@ -80,7 +80,7 @@
     }
     30% {
       transform: translate(30px, -50px);
-    }
+    } 
     70% {
       transform: translate(-150px, -50px);
     }

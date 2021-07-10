@@ -60,7 +60,8 @@ function toggleOn() {
   console.log("clicked")
   setTimeout(function () {
     element.classList.add("hide")
-  }, 3000);
+    
+  }, 2500);
   var xx = document.getElementById("Myid");
   var yy = document.getElementById("load");
   var state_ = document.getElementById("state_html");
@@ -74,7 +75,7 @@ function toggleOn() {
   else {
     setTimeout(function () {
       xx.style.display = "block";
-    }, 3000);
+    }, 2500);
 
     var third_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=" + dist_.value + "&date=" + h.substr(8, 2) + "-" + h.substr(5, 2) + "-" + h.substr(0, 4);
     console.log(third_url)
